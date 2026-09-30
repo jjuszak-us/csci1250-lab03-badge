@@ -108,12 +108,15 @@ Console.WriteLine($"Username: {username} ");
 Console.WriteLine($"Initials: {upperFN}.{upperLN}. ");
 Console.WriteLine($"Letters in last name: {lastName.Length}");
 Console.WriteLine();
+
 Console.WriteLine($"Student ID : {userID} ");
 Console.WriteLine($"Locker: {lockerID} ");
 Console.WriteLine();
+
 Console.WriteLine($"Distance: {distance.ToString("F1")} feet");
 Console.WriteLine($"Walk Time: {minutes} minutes {seconds} seconds ");
 Console.WriteLine();
+
 Console.WriteLine(new string ('=', 34));
 Console.WriteLine(("ETSU STUDENT BADGE").PadLeft(26));
 Console.WriteLine(new string ('=', 34));
@@ -126,11 +129,124 @@ Console.WriteLine(new string ('=', 34));
 
 
 
+// Console.WriteLine("===== Part 5 EXTRA=====");
+// Extra/ things to try out
 
 
+// //idk if this makes the number more or less random. I could also randomize the order but also dont know how and failed trying
+// Random rnd = new Random();
+// int rnd1 = rnd.Next(0,10);
+// int rnd2 = rnd.Next(0,10);
+// int rnd3 = rnd.Next(0,10);
+// int rnd4 = rnd.Next(0,10);
+// int rnd5 = rnd.Next(0,10);
+// int rnd6 = rnd.Next(0,10);
+
+// string userIdId = $"{rnd1}{rnd2}{rnd3}{rnd4}{rnd5}{rnd6}";
+// Console.WriteLine(userIdId);
 
 
+// Random rnd = new Random(1250);
+// int rndFinal = rnd.Next();
+// Console.WriteLine(rndFinal);
+// // it gives the same random number everytime you run it? 
+// // it would be handy when you write new or edit existing operations?
+// // you would know how each new line of code changes the random
+
+// double x1, y1, x2, y2, xTemp, yTemp, distance;
 
 
+// x1 = 120;
+// y1 = 340;
 
 
+// x2 = 500;
+// y2 = 810;
+
+// xTemp = (x2 - x1);
+// yTemp = (y2 - y1);
+
+// distance = Math.Sqrt(Math.Pow(xTemp, 2) + Math.Pow(yTemp, 2));
+
+
+// double speed = 4.5;
+
+// double minutes = Math.Floor(((distance / speed)) /60); 
+// double seconds = Math.Floor((distance % speed) * 10);
+// double minutesAlt = ((distance / speed) /60);
+
+// Console.WriteLine($"Distance: {distance.ToString("F1")} feet");
+// Console.WriteLine($"Walk Time: {minutes} minutes {seconds} seconds ");
+// Console.WriteLine($"Walk Time: {minutesAlt.ToString("F2")} minutes");
+// //probably the first one. its more clean
+
+// string fullName, firstName, lastName;
+
+// Console.WriteLine("What is your full name? (Only give first and last name please) ");
+// fullName = Console.ReadLine();
+
+
+// fullName = fullName.Trim();
+// int spacePosition = fullName.IndexOf(" ");
+// firstName = fullName.Substring(0, spacePosition);
+// lastName = fullName.Substring(spacePosition + 1);
+
+// string firstNameFinal = firstName.ToUpper();
+// string lastNameFinal = lastName.ToUpper();
+// string fullNameFinal = ($"{firstNameFinal} {lastNameFinal}");
+
+// string username;
+// char firstChar;
+// firstChar = firstName[0];
+
+// username = (firstChar + lastName).ToLower();
+
+// char lastChar;
+// lastChar = lastName[0];
+
+// char upperFN = char.ToUpper(firstChar);
+// char upperLN = char.ToUpper(lastChar);
+
+// Console.WriteLine($"Name on badge:{firstNameFinal} {lastNameFinal}");
+// Console.WriteLine($"Username: {username} ");
+// Console.WriteLine($"Initials: {upperFN}.{upperLN}. ");
+// Console.WriteLine($"Letters in last name: {lastName.Length}");
+
+// i struggled with this part so I'm not sure what i need exactly
+// i can pull a substring using the first space but i dont know how to pull using the second space
+// i.e. i could say pull 0 to spacePosition1 and then pull from the last spacePosition to the end
+
+// string fullName, firstName, lastName;
+
+// Console.WriteLine("What is your full name? (Only give first and last name please) ");
+// fullName = Console.ReadLine();
+
+
+// fullName = fullName.Trim();
+// int spacePosition = fullName.IndexOf(" ");
+// int spacePosition2 = fullName.LastIndexOf(" ");
+// firstName = fullName.Substring(0, spacePosition);
+// lastName = fullName.Substring(spacePosition2 +1);
+
+// string firstNameFinal = firstName.ToUpper();
+// string lastNameFinal = lastName.ToUpper();
+// string fullNameFinal = ($"{firstNameFinal} {lastNameFinal}");
+
+// string username;
+// char firstChar;
+// firstChar = firstName[0];
+
+// username = (firstChar + lastName).ToLower();
+
+// char lastChar;
+// lastChar = lastName[0];
+
+// char upperFN = char.ToUpper(firstChar);
+// char upperLN = char.ToUpper(lastChar);
+
+// Console.WriteLine($"Name on badge:{firstNameFinal} {lastNameFinal}");
+// Console.WriteLine($"Username: {username} ");
+// Console.WriteLine($"Initials: {upperFN}.{upperLN}. ");
+// Console.WriteLine($"Letters in last name: {lastName.Length}");
+
+// // well, that worked... So I'm gonna say I did something wrongish/not the way you intended/not grasping the concept
